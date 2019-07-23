@@ -1,71 +1,33 @@
-import Layout from '../components/MyLayout.js'
-import Link from 'next/link'
+// import Layout from '../components/MyLayout.js';
+// // import Link from 'next/link';
+// //
+// // const PostLink = props => (
+// //     <li>
+// //         <Link href={`/post?title=${props.title}`}>
+// //             <a>{props.title}</a>
+// //         </Link>
+// //     </li>
+// // );
+// // export default function Blog() {
+// //     return (
+// //         <Layout>
+// //             <h1>My Blog</h1>
+// //             <ul>
+// //                 <PostLink title="Hello Next.js" />
+// //                 <PostLink title="Learn Next.js is awesome" />
+// //                 <PostLink title="Deploy apps with Zeit" />
+// //             </ul>
+// //         </Layout>
+// //     );
+// // }
+// function Home() {
+//     return <div>Welcome to Next.js!</div>;
+// }
 
-function getPosts() {
-  return [
-    { id: 'hello-nextjs', title: 'Hello Next.js' },
-    { id: 'learn-nextjs', title: 'Learn Next.js is awesome' },
-    { id: 'deploy-nextjs', title: 'Deploy apps with ZEIT' }
-  ]
+function MyImage() {
+    return <img src="static/png/web/background@2x.png" alt="my image" />;
 }
 
-const PostLink = ({ post }) => (
-  <li>
-    <Link href="/p/[id]" as={`/p/${post.id}`}>
-      <a>{post.title}</a>
-    </Link>
-    <style jsx>{`
-      li {
-        list-style: none;
-        margin: 5px 0;
-      }
+export default MyImage;
 
-      a {
-        text-decoration: none;
-        color: blue;
-        font-family: 'Arial';
-      }
-
-      a:hover {
-        opacity: 0.6;
-      }
-    `}</style>
-  </li>
-)
-
-export default function Blog() {
-  return (
-    <Layout>
-      <h1>My Blog</h1>
-      <ul>
-        {getPosts().map(post => (
-          <PostLink key={post.id} post={post} />
-        ))}
-      </ul>
-      <style jsx>{`
-        h1,
-        a {
-          font-family: 'Arial';
-        }
-
-        ul {
-          padding: 0;
-        }
-
-        li {
-          list-style: none;
-          margin: 5px 0;
-        }
-
-        a {
-          text-decoration: none;
-          color: blue;
-        }
-
-        a:hover {
-          opacity: 0.6;
-        }
-      `}</style>
-    </Layout>
-  )
-}
+// export default Home;
