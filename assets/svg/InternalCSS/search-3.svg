@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13.058" height="13.015" viewBox="0 0 13.058 13.015">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #fff;
+        stroke-width: 0.7px;
+      }
+    </style>
+  </defs>
+  <g id="search" transform="translate(0.3 0.35)">
+    <path id="Path" class="cls-1" d="M12.256,11.687,9.263,8.694a5.255,5.255,0,1,0-.519.519l2.993,2.993a.371.371,0,0,0,.259.109.36.36,0,0,0,.259-.109A.369.369,0,0,0,12.256,11.687ZM.785,5.251A4.514,4.514,0,1,1,5.3,9.767,4.519,4.519,0,0,1,.785,5.251Z" transform="translate(0)"/>
+  </g>
+</svg>

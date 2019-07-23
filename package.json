@@ -12,10 +12,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@bit/mui-org.material-ui.button": "^3.9.2",
+    "duel": "^3.2.0",
+    "ffa": "^3.2.2",
+    "groupstage": "^3.1.1",
     "next": "^9.0.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-markdown": "^4.0.6"
+    "react-markdown": "^4.0.6",
+    "tiebreaker": "^3.1.0"
   },
   "bit": {
     "env": {
