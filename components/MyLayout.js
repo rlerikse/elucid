@@ -1,14 +1,18 @@
 import Header from './Header'
 
-const layoutStyle = {
-    margin: 20,
-    padding: 20,
-    border: '1px solid #DDD'
+let imgUrl = 'static/png/web/background.png'
+let styles = {
+    root: {
+        backgroundImage: 'url(' + imgUrl + ')',
+        backgroundSize: 'cover',
+        overflow: 'hidden',
+    }
 }
 
 export default function Layout(props) {
     return (
-        <div style={layoutStyle}>
+        <div style={styles.root}>
+            Suh
             <Header />
             {props.children}
         </div>
