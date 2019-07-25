@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import Layout from '../components/MyLayout.js';
+import Layout from '../components/Layout.js';
 
 const Content = () => {
     const router = useRouter();

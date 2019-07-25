@@ -1,9 +1,12 @@
-import Layout from '../components/MyLayout.js'
+import Layout from '../components/Layout';
 
-export default function About() {
-    return (
-        <Layout>
-            <p>This is the about page</p>
-        </Layout>
-    )
-}
+const About = () => (
+    <Layout>
+        <div>
+            <h1>About BitzPrice</h1>
+            <p>Application to view Bitcoin prices</p>
+        </div>
+    </Layout>
+);
+
+export default About;
