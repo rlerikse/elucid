@@ -1,5 +1,7 @@
+import React from 'react'
 import Head from 'next/head';
 import Navbar from './Navbar';
+import Header from "./Header";
 
 let imgUrl = 'static/png/web/background@2x.png'
 let styles = {
@@ -32,6 +34,7 @@ const Layout = (props) => (
             height: 100%;
           }
         `}</style>
+        <Header />
         <div className="container">
             {props.children}
         </div>
