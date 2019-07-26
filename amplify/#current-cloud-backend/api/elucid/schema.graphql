@@ -1,0 +1,16 @@
+type User @model {
+    # ! means non-null GraphQL fields are allowed to be null by default
+    id: ID!
+    name: String!
+    createdAt: String!
+    completed: Boolean!
+    userList: UserList! @connection(name: "SortedList")
+    userId: String!
+}
+
+type UserList @model {
+    id: ID!
+    createdAt: String!
+    # Array of Users sorted by User.createdAt
+    users: [User] @connection(name: "SortedList", sortField: "createdAt")
+}

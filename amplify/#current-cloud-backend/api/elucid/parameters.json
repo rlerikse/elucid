@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "elucid",
+    "schemaGraphql": "s3://elucid-20190725213722-deployment/amplify-appsync-files/schema.graphql.1564109059280",
+    "ResolverBucket": "elucid-20190725213722-deployment",
+    "ResolverRootKey": "amplify-appsync-files",
+    "DeploymentTimestamp": "1564109059280"
+}
