@@ -420,147 +420,6 @@ var Navbar = function Navbar() {
 
 /***/ }),
 
-/***/ "./components/Prices.js":
-/*!******************************!*\
-  !*** ./components/Prices.js ***!
-  \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-
-
-
-
-
-
-
-var _jsxFileName = "/mnt/z/repos/elucid/components/Prices.js";
-
-
-var Prices =
-/*#__PURE__*/
-function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Prices, _React$Component);
-
-  function Prices() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Prices);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Prices)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "state", {
-      currency: 'USD'
-    });
-
-    return _this;
-  }
-
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Prices, [{
-    key: "render",
-    value: function render() {
-      var _this2 = this;
-
-      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 10
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
-        className: "list-group",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 11
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
-        className: "list-group-item",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 12
-        },
-        __self: this
-      }, "Bitcoin rate for ", this.props.bpi[this.state.currency].description, " :", react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
-        className: "badge badge-primary",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 13
-        },
-        __self: this
-      }, this.props.bpi[this.state.currency].code), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("strong", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 14
-        },
-        __self: this
-      }, this.props.bpi[this.state.currency].rate))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 17
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("select", {
-        onChange: function onChange(e) {
-          return _this2.setState({
-            currency: e.target.value
-          });
-        },
-        className: "form-control",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 18
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("option", {
-        value: "USD",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 19
-        },
-        __self: this
-      }, "USD"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("option", {
-        value: "GBP",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 20
-        },
-        __self: this
-      }, "GBP"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("option", {
-        value: "EUR",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 21
-        },
-        __self: this
-      }, "EUR")));
-    }
-  }]);
-
-  return Prices;
-}(react__WEBPACK_IMPORTED_MODULE_7___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["default"] = (Prices);
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/date/now.js":
 /*!*****************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/date/now.js ***!
@@ -1838,51 +1697,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_Prices__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Prices */ "./components/Prices.js");
+/* harmony import */ var aws_amplify__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! aws-amplify */ "aws-amplify");
+/* harmony import */ var aws_amplify__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(aws_amplify__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _src_aws_exports__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/aws-exports */ "./src/aws-exports.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _src_graphql_mutations__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../src/graphql/mutations */ "./src/graphql/mutations.js");
+/* harmony import */ var _src_graphql_queries__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../src/graphql/queries */ "./src/graphql/queries.js");
+/* harmony import */ var _src_graphql_subscriptions__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../src/graphql/subscriptions */ "./src/graphql/subscriptions.js");
 
 
 var _jsxFileName = "/mnt/z/repos/elucid/pages/index.js";
 
 
 
+aws_amplify__WEBPACK_IMPORTED_MODULE_3__["API"].configure(_src_aws_exports__WEBPACK_IMPORTED_MODULE_4__["default"]);
+
+
+
+
 
 
 var Index = function Index(props) {
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 27
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 28
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 29
     },
     __self: this
-  }, "Welcome to BitzPrice"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
+  }, "Welcome to Elucid"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 30
     },
     __self: this
-  }, "Check current Bitcoin rate"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Prices__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    bpi: props.bpi,
+  }, "Currently registered users"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", {
+    className: "list-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 31
     },
     __self: this
-  })));
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", {
+    className: "list-group-item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, "Yamama"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", {
+    className: "list-group-item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: this
+  }, props.users))));
 };
 
 Index.getInitialProps =
@@ -1890,33 +1773,133 @@ Index.getInitialProps =
 Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
 /*#__PURE__*/
 _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-  var res, data;
+  var result;
   return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
-          _context.next = 2;
-          return fetch('https://api.coindesk.com/v1/bpi/currentprice.json');
+          _context.prev = 0;
+          _context.next = 3;
+          return aws_amplify__WEBPACK_IMPORTED_MODULE_3__["API"].graphql(Object(aws_amplify__WEBPACK_IMPORTED_MODULE_3__["graphqlOperation"])(Object(_src_graphql_queries__WEBPACK_IMPORTED_MODULE_8__["getUserList"])(), {
+            id: "global"
+          }));
 
-        case 2:
-          res = _context.sent;
-          _context.next = 5;
-          return res.json();
+        case 3:
+          result = _context.sent;
+          console.log(result);
+          return _context.abrupt("return", result);
 
-        case 5:
-          data = _context.sent;
+        case 8:
+          _context.prev = 8;
+          _context.t0 = _context["catch"](0);
+          console.warn(_context.t0);
           return _context.abrupt("return", {
-            bpi: data.bpi
+            users: []
           });
 
-        case 7:
+        case 12:
         case "end":
           return _context.stop();
       }
     }
-  }, _callee);
+  }, _callee, null, [[0, 8]]);
 }));
 /* harmony default export */ __webpack_exports__["default"] = (Index);
+
+/***/ }),
+
+/***/ "./src/aws-exports.js":
+/*!****************************!*\
+  !*** ./src/aws-exports.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// WARNING: DO NOT EDIT. This file is automatically generated by AWS Amplify. It will be overwritten.
+var awsmobile = {
+  "aws_project_region": "us-east-2",
+  "aws_appsync_graphqlEndpoint": "https://bevitly75rhyzmu5ftuew34bv4.appsync-api.us-east-2.amazonaws.com/graphql",
+  "aws_appsync_region": "us-east-2",
+  "aws_appsync_authenticationType": "API_KEY",
+  "aws_appsync_apiKey": "da2-mclqdnudkbbqpmspogrralrsw4"
+};
+/* harmony default export */ __webpack_exports__["default"] = (awsmobile);
+
+/***/ }),
+
+/***/ "./src/graphql/mutations.js":
+/*!**********************************!*\
+  !*** ./src/graphql/mutations.js ***!
+  \**********************************/
+/*! exports provided: createUser, updateUser, deleteUser, createUserList, updateUserList, deleteUserList */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createUser", function() { return createUser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "updateUser", function() { return updateUser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "deleteUser", function() { return deleteUser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createUserList", function() { return createUserList; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "updateUserList", function() { return updateUserList; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "deleteUserList", function() { return deleteUserList; });
+// eslint-disable
+// this is an auto generated file. This will be overwritten
+var createUser = "mutation CreateUser($input: CreateUserInput!) {\n  createUser(input: $input) {\n    id\n    name\n    createdAt\n    completed\n    userList {\n      id\n      createdAt\n      users {\n        nextToken\n      }\n    }\n    userId\n  }\n}\n";
+var updateUser = "mutation UpdateUser($input: UpdateUserInput!) {\n  updateUser(input: $input) {\n    id\n    name\n    createdAt\n    completed\n    userList {\n      id\n      createdAt\n      users {\n        nextToken\n      }\n    }\n    userId\n  }\n}\n";
+var deleteUser = "mutation DeleteUser($input: DeleteUserInput!) {\n  deleteUser(input: $input) {\n    id\n    name\n    createdAt\n    completed\n    userList {\n      id\n      createdAt\n      users {\n        nextToken\n      }\n    }\n    userId\n  }\n}\n";
+var createUserList = "mutation CreateUserList($input: CreateUserListInput!) {\n  createUserList(input: $input) {\n    id\n    createdAt\n    users {\n      items {\n        id\n        name\n        createdAt\n        completed\n        userId\n      }\n      nextToken\n    }\n  }\n}\n";
+var updateUserList = "mutation UpdateUserList($input: UpdateUserListInput!) {\n  updateUserList(input: $input) {\n    id\n    createdAt\n    users {\n      items {\n        id\n        name\n        createdAt\n        completed\n        userId\n      }\n      nextToken\n    }\n  }\n}\n";
+var deleteUserList = "mutation DeleteUserList($input: DeleteUserListInput!) {\n  deleteUserList(input: $input) {\n    id\n    createdAt\n    users {\n      items {\n        id\n        name\n        createdAt\n        completed\n        userId\n      }\n      nextToken\n    }\n  }\n}\n";
+
+/***/ }),
+
+/***/ "./src/graphql/queries.js":
+/*!********************************!*\
+  !*** ./src/graphql/queries.js ***!
+  \********************************/
+/*! exports provided: getUser, listUsers, getUserList, listUserLists */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getUser", function() { return getUser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "listUsers", function() { return listUsers; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getUserList", function() { return getUserList; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "listUserLists", function() { return listUserLists; });
+// eslint-disable
+// this is an auto generated file. This will be overwritten
+var getUser = "query GetUser($id: ID!) {\n  getUser(id: $id) {\n    id\n    name\n    createdAt\n    completed\n    userList {\n      id\n      createdAt\n      users {\n        nextToken\n      }\n    }\n    userId\n  }\n}\n";
+var listUsers = "query ListUsers(\n  $filter: ModelUserFilterInput\n  $limit: Int\n  $nextToken: String\n) {\n  listUsers(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    items {\n      id\n      name\n      createdAt\n      completed\n      userList {\n        id\n        createdAt\n      }\n      userId\n    }\n    nextToken\n  }\n}\n";
+var getUserList = "query GetUserList($id: ID!) {\n  getUserList(id: $id) {\n    id\n    createdAt\n    users {\n      items {\n        id\n        name\n        createdAt\n        completed\n        userId\n      }\n      nextToken\n    }\n  }\n}\n";
+var listUserLists = "query ListUserLists(\n  $filter: ModelUserListFilterInput\n  $limit: Int\n  $nextToken: String\n) {\n  listUserLists(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    items {\n      id\n      createdAt\n      users {\n        nextToken\n      }\n    }\n    nextToken\n  }\n}\n";
+
+/***/ }),
+
+/***/ "./src/graphql/subscriptions.js":
+/*!**************************************!*\
+  !*** ./src/graphql/subscriptions.js ***!
+  \**************************************/
+/*! exports provided: onCreateUser, onUpdateUser, onDeleteUser, onCreateUserList, onUpdateUserList, onDeleteUserList */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "onCreateUser", function() { return onCreateUser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "onUpdateUser", function() { return onUpdateUser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "onDeleteUser", function() { return onDeleteUser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "onCreateUserList", function() { return onCreateUserList; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "onUpdateUserList", function() { return onUpdateUserList; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "onDeleteUserList", function() { return onDeleteUserList; });
+// eslint-disable
+// this is an auto generated file. This will be overwritten
+var onCreateUser = "subscription OnCreateUser {\n  onCreateUser {\n    id\n    name\n    createdAt\n    completed\n    userList {\n      id\n      createdAt\n      users {\n        nextToken\n      }\n    }\n    userId\n  }\n}\n";
+var onUpdateUser = "subscription OnUpdateUser {\n  onUpdateUser {\n    id\n    name\n    createdAt\n    completed\n    userList {\n      id\n      createdAt\n      users {\n        nextToken\n      }\n    }\n    userId\n  }\n}\n";
+var onDeleteUser = "subscription OnDeleteUser {\n  onDeleteUser {\n    id\n    name\n    createdAt\n    completed\n    userList {\n      id\n      createdAt\n      users {\n        nextToken\n      }\n    }\n    userId\n  }\n}\n";
+var onCreateUserList = "subscription OnCreateUserList {\n  onCreateUserList {\n    id\n    createdAt\n    users {\n      items {\n        id\n        name\n        createdAt\n        completed\n        userId\n      }\n      nextToken\n    }\n  }\n}\n";
+var onUpdateUserList = "subscription OnUpdateUserList {\n  onUpdateUserList {\n    id\n    createdAt\n    users {\n      items {\n        id\n        name\n        createdAt\n        completed\n        userId\n      }\n      nextToken\n    }\n  }\n}\n";
+var onDeleteUserList = "subscription OnDeleteUserList {\n  onDeleteUserList {\n    id\n    createdAt\n    users {\n      items {\n        id\n        name\n        createdAt\n        completed\n        userId\n      }\n      nextToken\n    }\n  }\n}\n";
 
 /***/ }),
 
@@ -2150,6 +2133,17 @@ var auth = function auth(ctx) {
 
 module.exports = __webpack_require__(/*! /mnt/z/repos/elucid/pages/index.js */"./pages/index.js");
 
+
+/***/ }),
+
+/***/ "aws-amplify":
+/*!******************************!*\
+  !*** external "aws-amplify" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("aws-amplify");
 
 /***/ }),
 
